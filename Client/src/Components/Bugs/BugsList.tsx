@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface IBug {
   id: number;
@@ -12,7 +12,7 @@ interface IBugsProps {
   onDelete: (bugId: number) => void;
 }
 
-const Bugs: React.FC<IBugsProps> = ({ bugs, onUpdate, onDelete }) => {
+const BugsList: React.FC<IBugsProps> = ({ bugs, onUpdate, onDelete }) => {
   return (
     <div className="bug-list-container">
       <h2>Bug List</h2>
@@ -31,4 +31,4 @@ const Bugs: React.FC<IBugsProps> = ({ bugs, onUpdate, onDelete }) => {
   );
 };
 
-export default Bugs;
+export default BugsList;
