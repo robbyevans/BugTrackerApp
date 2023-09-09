@@ -1,13 +1,11 @@
 import { Provider } from "react-redux";
-import ConfigureStore from "./Redux/ConfigureStore";
+import store from "./Redux/Store";
 import BugsContainer from "./Components/Bugs/BugsContainer";
-
-const store = ConfigureStore();
 
 const App = () => {
   return (
     <Provider store={store}>
-      <BugsContainer />;
+      <BugsContainer />
     </Provider>
   );
 };
